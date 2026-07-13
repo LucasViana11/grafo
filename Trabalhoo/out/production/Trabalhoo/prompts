@@ -1,0 +1,55 @@
+HISTÓRICO DE PROMPTS - DESENVOLVIMENTO DE SISTEMA DE GRAFOS
+Aluno: [Seu Nome Aqui]
+Disciplina: Estrutura de Dados e Programação Orientada a Objetos
+Professor: Prof. Dr. Bruno Vicente
+Ferramenta: Google Gemini (Modelo 1.5 Pro)
+
+======================================================================
+PROMPT 1: IMPLEMENTAÇÃO DA MINHA MODELAGEM DE GRAFO EM POO
+======================================================================
+Contexto: Solicitação de escrita de código após eu planejar a estrutura base baseada em Matriz de Adjacência.
+
+Texto enviado:
+"Estou modelando um projeto de grafos em Java usando Programação Orientada a Objetos.
+Decidi que a melhor estrutura para o meu caso será uma Matriz de Adjacência (int[][]) e usarei uma List<String> para mapear e gerenciar o nome dos vértices.
+Preciso que você escreva a estrutura da classe 'Grafo' seguindo as minhas decisões de projeto: o construtor deve fixar o limite máximo de nós e o sistema deve permitir grafos direcionados ou não direcionados.
+Escreva os métodos públicos adicionarVertice, adicionarAresta (aplicando o espelhamento na matriz se for não direcionado) e um método booleano para verificar se um nó existe."
+
+======================================================================
+PROMPT 2: CODIFICAÇÃO DOS ALGORITMOS DE BUSCA QUE PLANEJEI (BFS E DFS)
+======================================================================
+Contexto: Solicitação de implementação das buscas baseada nas estruturas auxiliares que escolhi.
+
+Texto enviado:
+"Com a minha classe Grafo pronta, planejei a lógica dos dois algoritmos de busca.
+Para a Busca em Largura (BFS), decidi usar uma Fila (Queue) como estrutura auxiliar para explorar por níveis.
+Para a Busca em Profundidade (DFS), farei por recursão na pilha do sistema para manter o código limpo.
+Implemente esses dois algoritmos para mim dentro de uma classe 'Buscador'.
+Garanta que ambos usem um array de visitados para o controle de ciclos que planejei, evitando travamentos, e me retorne o caminho exato formatado como uma lista ordenada de Strings."
+
+======================================================================
+PROMPT 3: MONTAGEM DA INTERFACE GRÁFICA EM SWING COM AS MINHAS REGRAS
+======================================================================
+Contexto: Criação da interface gráfica seguindo o design e tratamento de erros definido pelo aluno.
+
+Texto enviado:
+"Desenhei o fluxo da minha aplicação gráfica e decidi usar Java Swing. Quero uma janela dividida em 4 etapas lógicas: 1) Criação do grafo com tamanho e tipo, 2) Campo para eu cadastrar os nós, 3) Campos de origem/destino para eu criar as conexões na matriz, 4) Campos para rodar as buscas. Os resultados devem aparecer em uma JTextArea. Quero que você codifique essa interface aplicando blocos try-catch e tratamentos condicionais para capturar erros de inputs vazios ou nós inexistentes, disparando caixas de diálogo informativas (JOptionPane) para que o sistema nunca quebre em tempo de execução."
+
+======================================================================
+==================================================
+PROMPT 4: EXIBIÇÃO DINÂMICA DA MATRIZ DE ADJACÊNCIA NA INTERFACE
+==================================================
+Contexto: Solicitação de mapeamento da matriz para listagem de conexões em tempo de execução.
+
+Texto enviado:
+"Notei que ao realizar a busca de caminhos, as conexões (arestas) que criei anteriormente somem da tela de histórico, dificultando lembrar quais caminhos são válidos para testar com o professor.
+Modifique a ação do botão 'Buscar Caminhos' para fazer uma varredura (loop for aninhado) na minha matriz de adjacência (int[][]) e listar de forma textual todas as conexões ativas no formato 'Nó1 -> Nó2' logo acima do resultado das buscas."
+
+======================================================================
+PROMPT 5: CORREÇÃO DE BUG DE SINTAXE NO MEU JOPTIONPANE
+======================================================================
+Contexto: Correção de erro de compilação identificado pelo aluno na classe visual.
+
+Texto enviado:
+"Identifiquei um erro de compilação na linha onde exibo o alerta de nó inexistente no Swing.
+O compilador acusa que foram passados 5 parâmetros no JOptionPane, violando a assinatura nativa do Java. Ajuste o código para conter os 4 argumentos corretos (componente pai, mensagem, título e tipo de mensagem) para que eu possa rodar e compilar o projeto."
